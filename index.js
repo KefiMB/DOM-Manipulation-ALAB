@@ -55,5 +55,8 @@ topMenuEl.addEventListener("click",(event) => {
     if (!event.target.matches('a')) {
     return 
 }
+topMenuLinks.forEach(link => link.classList.remove('active'));
+const clickedLink = event.target;
+clickedLink.classList.toggle("active");
 console.log(event.target.textContent);
 });
