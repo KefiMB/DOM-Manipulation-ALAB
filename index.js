@@ -1,7 +1,7 @@
 console.log("Manipulating the DOM")
 // Part 1 of the Lab
 const mainEl = document.querySelector("main");
-mainEl.style.backgroundcolor ='var(--#4a4e4d)';
+mainEl.style.backgroundcolor ='var(--main-bg)';
 mainEl.innerHTML = '<h1>DOM Manipulation</h1>';
 console.log(mainEl.style.backgroundColor);
 console.log(mainEl.innerHTML);
@@ -12,9 +12,12 @@ element.classList.add("flex-ctr")
 // Part 2
 const topMenu = document.querySelector("topMenuEl"); 
 console.log(topMenuEl)
-topMenuEl.style.height = 100%;
-topMenuEl.style.backgroundColor =  "#0e9aa7";
+topMenuEl.style.height = "100%";
+topMenuEl.style.backgroundColor = "var(--top-menu-bg)";
 topMenuEl.classList.add("flex-around");
+console.log(topMenuEl.style.height); 
+console.log(topMenuEl.style.backgroundColor); 
+console.log(topMenuEl.classList); 
 
 // Part 3
 
@@ -33,6 +36,7 @@ menuLinks.forEach(link => {
   linkEl.textContent = link.text;
   topMenuEl.appendChild(linkEl);
 });
+console.log(topMenuEl.innerHTML);
 
 // Part 2 of the Lab
 // Part 3
