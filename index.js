@@ -69,3 +69,10 @@ const linkObj = menuLinks.find(link => link.text === clickedLink.textContent);
 } else {
     subMenuEl.style.top = "0";
 }
+subMenuEl.innerHTML = '';
+linkObj.subLinks.forEach(subLink => {
+    const subLinkEl = document.createElement('a');
+    subLinkEl.href = subLink.href;
+    subLinkEl.textContent = subLink.text;
+    subMenuEl.appendChild(subLinkEl);
+});
