@@ -60,3 +60,12 @@ const clickedLink = event.target;
 clickedLink.classList.toggle("active");
 console.log(event.target.textContent);
 });
+
+// Part 5
+const linkObj = menuLinks.find(link => link.text === clickedLink.textContent);
+    if (linkObj.subLinks) {
+      subMenuEl.style.top = '100%'; 
+      subMenuEl.style.top = '0'; 
+} else {
+    subMenuEl.style.top = "0";
+}
