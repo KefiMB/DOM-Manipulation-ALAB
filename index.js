@@ -52,7 +52,7 @@ subMenuEl.style.position = "absolute";
 subMenuEl.style.top = "0%";
 
 // Part 4 & 5
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener(function () {
   const topMenuEl = document.getElementById("top-menu");
   const subMenuEl = document.getElementById("sub-menu");
   const mainEl = document.querySelector("main");
